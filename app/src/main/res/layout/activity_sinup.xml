@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".SinupActivity">
+   
+   
+   <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="400dp"
+      android:layout_height="216dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@tools:sample/backgrounds/scenic" />
+   
+   <TextView
+      android:id="@+id/textop"
+      android:layout_width="318dp"
+      android:layout_height="30dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="32dp"
+      android:text="@string/registro"
+      android:gravity="center"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.482"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+   
+   <EditText
+      android:id="@+id/SinupUsername"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="52dp"
+      android:layout_marginEnd="16dp"
+      android:hint="@string/username"
+      android:padding="12dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textop"></EditText>
+   
+   <EditText
+      android:id="@+id/SinupPassword"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginEnd="16dp"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+      android:padding="12dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/SinupUsername"></EditText>
+   
+   <Button
+      android:id="@+id/SinupButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="@color/green"
+      android:scrollbarThumbHorizontal="@color/white"
+      android:scrollbarThumbVertical="@color/white"
+      android:text="@string/regristrarse"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/SinupPassword" />
+   
+   <TextView
+      android:id="@+id/LoginRedirect"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginBottom="16dp"
+      android:text="@string/acceder"
+      android:gravity="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/SinupButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

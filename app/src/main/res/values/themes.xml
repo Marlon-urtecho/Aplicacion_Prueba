@@ -4,6 +4,9 @@
    <style name="Theme.Aplicacion_Prueba" parent="android:Theme.Material.Light.NoActionBar" />
    <!-- Base application theme. -->
    <style name="Base.Theme.Aplicacion_Prueba" parent="Theme.Material3.DayNight.NoActionBar">
+      <item name="colorPrimary">@color/green</item>
+      <item name="colorPrimaryVariant">@color/green</item>
+      <item name="android:statusBarColor">@color/green</item>
       <!-- Customize your light theme here. -->
       <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
    </style>
